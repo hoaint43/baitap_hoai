@@ -1,0 +1,72 @@
+<form action="/action_page.php" id="infomation" method="POST">
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name">
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+    <label for="quequan">Que Quan:</label>
+    <input type="text" id="quequan" name="quequan">
+    <input type="submit">
+</form>
+
+<label for="uni">Truờng đại học:</label>
+    <select id="uni" name="uni" form="infomation">
+    <option value="bachkhoa">Bach Khoa</option>
+    <option value="Kinhte">Kinh te quoc dan</option>
+    <option value="Xaydung">Xay Dung</option>
+</select>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <a href="/index.php" style="color:red">go to dashboard</a>
+</body>
+</html>
+
+
+<form action="/login.php" method="POST">
+    <label for="name">Username:</label>
+    <input type="text" id="name" name="name">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <input type="checkbox" name="save" value="save">
+    <label for="save">Save password</label><br>
+    <input type="submit">
+</form>
+
+<form action="/change_pass.php" method="POST">
+    <label for="old_password">Old password:</label>
+    <input type="password" id="old_password" name="old_password">
+    <label for="new_password">New Password:</label>
+    <input type="password" id="new_password" name="new_password">
+    <label for="confirm_password">Confirm:</label>
+    <input type="password" id="confirm_password" name="confirm_password">
+    <input type="submit">
+</form>
+
+
+<form method="post" action="/sports">      
+    <fieldset>      
+        <legend>Thể thao?</legend>      
+        <input type="checkbox" name="favorite_sport" value="Bong_da">Bong_da<br>      
+        <input type="checkbox" name="favorite_sport" value="Bong_chuyen">Bong_chuyen<br>      
+        <input type="checkbox" name="favorite_sport" value="Boi_loi">Boi_loi<br>      
+        <br>      
+        <input type="submit" value="Submit now" />      
+    </fieldset>      
+</form>
+
+
+<form action="/change_email.php" method="POST">
+    <label for="old_email">Old mail:</label>
+    <input type="email" id="old_email" name="old_email">
+    <label for="new_email">New mail:</label>
+    <input type="password" id="new_email" name="new_email">
+</form>
+
+<input type="hidden" name="csrf" value="6388sgdagh289asdbzug@$VFGFS#">
